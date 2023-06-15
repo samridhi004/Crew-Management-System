@@ -21,6 +21,7 @@ input userInput {
   dob: Date
   groupid: ID
   role: Role
+  #hello
 }
 
 type Query {
