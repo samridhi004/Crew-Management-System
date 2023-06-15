@@ -1,14 +1,28 @@
+enum Role {
+  Owner
+  User
+  Mentor
+}
+
 type User {
   id: ID!
   name: String
   email: String
+  password: String
+  dob: Date
+  #groupid: Group
+  role: Role
 }
 
 input userInput {
-  name: String!
-  email: String!
+  name: String
+  email: String
+  password: String
+  dob: Date
+  groupid: ID
+  role: Role
+  #hello
 }
-
 
 type Query {
   getAllUsers: [User!]

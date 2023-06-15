@@ -6,11 +6,11 @@ export default class User extends Model {
       {
         name: {
           type: DataTypes.STRING,
-          //   allowNull: false,
+            // allowNull: false,
         },
         email: {
           type: DataTypes.STRING,
-          //   allowNull: false,
+        //   allowNull: false,
           unique: true,
         },
         // id: {
@@ -18,23 +18,23 @@ export default class User extends Model {
         //   autoIncrement: true,
         //   primaryKey: true,
         // },
-        // password:{
-        //     type:DataTypes.STRING,
-        //     allowNull:false
+        password:{
+            type:DataTypes.STRING,
+            // allowNull:false
 
-        // },
-        // DOB:{
-        //     type:DataTypes.DATE,
-        //     allowNull:false
+        },
+        dob:{
+            type:DataTypes.DATE,
+            // allowNull:false
 
-        // },
-        // GroupID:{
-        //     type:DataTypes.INTEGER
-        // },
-        // Role:{
-        //     type:DataTypes.ENUM('Owner','User','Mentor'),
-        //     defaultValues:'User'
-        // }
+        },
+        groupid:{
+            type:DataTypes.INTEGER
+        },
+        role:{
+            type:DataTypes.ENUM('Owner','User','Mentor'),
+            defaultValues:'User'
+        }
       },
       {
         sequelize,
