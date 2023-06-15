@@ -21,7 +21,7 @@ export default {
         console.log("args>>>>>>>>>.", input);
 
         const isExistEmail = await User.findOne({where: {email: input?.email}}) 
-        console.log({isExistEmail});
+        console.log(isExistEmail);
         if(isExistEmail){
           throw new Error("This email already exist!")
         }
@@ -30,8 +30,6 @@ export default {
         console.log("data>>>>>>>>", data);
         return data;
 
-        // const result = await resolve(input);
-        // return result;
       } catch (error) {
         console.log(error);
         throw new Error(error)
