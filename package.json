@@ -1,0 +1,39 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js",
+    "dev": "nodemon -e js,graphql --exec babel-node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.7.3",
+    "apollo-server-express": "^3.12.0",
+    "@babel/eslint-parser": "^7.17.0",
+    "babel-node": "^0.0.1-security",
+    "cors": "^2.8.5",
+    "@graphql-tools/load-files": "^6.6.1",
+    "@graphql-tools/merge": "^9.0.0",
+    "@graphql-tools/schema": "^9.0.17",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "graphql": "^16.6.0",
+    "graphql-middleware": "^6.1.33",
+    "graphql-scalars": "^1.20.1",
+    "pg": "^8.11.0",
+    "sequelize": "^6.32.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.3",
+    "@babel/node": "^7.20.7",
+    "@babel/plugin-proposal-class-properties": "7.16.7",
+    "@babel/plugin-proposal-object-rest-spread": "^7.17.3",
+    "@babel/preset-env": "^7.20.2"
+  }
+}
